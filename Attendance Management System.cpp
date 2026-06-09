@@ -1,3 +1,12 @@
+/*Attendance Management System
+Features:
+- Mark Attendance
+- Display Attendance
+- Search Student
+- Absence Report
+- Attendance Percentage
+- Exit */
+
 #include <iostream>
 #include <vector>
 #include <fstream>
