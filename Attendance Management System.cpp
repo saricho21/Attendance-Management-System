@@ -167,7 +167,415 @@ int main() {
     } while(choice != 6);
     return 0;
 }
- 
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 123
+Enter Student Name: sara
+Enter Date (DD/MM/YYYY): 11/11/2018
+Enter Status (Present/Absent): absent
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 321
+Enter Student Name: sosi
+Enter Date (DD/MM/YYYY): 11/11/2018
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 135
+Enter Student Name: maya
+Enter Date (DD/MM/YYYY): 11/11/2018
+Enter Status (Present/Absent): absent
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 123
+Enter Student Name: sara
+Enter Date (DD/MM/YYYY): 12/11/2018
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 321
+Enter Student Name: sosi
+Enter Date (DD/MM/YYYY): 12/11/2018
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 135
+Enter Student Name: maya
+Enter Date (DD/MM/YYYY): 12/11/2018
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 123
+Enter Student Name: sara
+Enter Date (DD/MM/YYYY): 13/11/2018
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 321
+Enter Student Name: sosi
+Enter Date (DD/MM/YYYY): 13/11/2018
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 135
+Enter Student Name: maya
+Enter Date (DD/MM/YYYY): 13/11/2018
+Enter Status (Present/Absent): absent
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 123
+Enter Student Name: sara
+Enter Date (DD/MM/YYYY): 14/11/2018
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 321
+Enter Student Name: sosi
+Enter Date (DD/MM/YYYY): 14/11
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 1
+
+Enter Student ID: 135
+Enter Student Name: maya
+Enter Date (DD/MM/YYYY): 14/11/2018
+Enter Status (Present/Absent): present
+
+Attendance Recorded Successfully!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 2
+
+===== ATTENDANCE REPORT =====
+
+ID: 123
+Name: sara
+Date: 11/11/2018
+Status: absent
+---------------------
+
+ID: 321
+Name: sosi
+Date: 11/11/2018
+Status: present
+---------------------
+
+ID: 135
+Name: maya
+Date: 11/11/2018
+Status: absent
+---------------------
+
+ID: 123
+Name: sara
+Date: 12/11/2018
+Status: present
+---------------------
+
+ID: 321
+Name: sosi
+Date: 12/11/2018
+Status: present
+---------------------
+
+ID: 135
+Name: maya
+Date: 12/11/2018
+Status: present
+---------------------
+
+ID: 123
+Name: sara
+Date: 13/11/2018
+Status: present
+---------------------
+
+ID: 321
+Name: sosi
+Date: 13/11/2018
+Status: present
+---------------------
+
+ID: 135
+Name: maya
+Date: 13/11/2018
+Status: absent
+---------------------
+
+ID: 123
+Name: sara
+Date: 14/11/2018
+Status: present
+---------------------
+
+ID: 321
+Name: sosi
+Date: 14/11/2018
+Status: present
+---------------------
+
+ID: 135
+Name: maya
+Date: 14/11/2018
+Status: present
+---------------------
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 3
+
+Enter Student ID: 123
+
+Name: sara
+Date: 11/11/2018
+Status: absent
+------------------
+
+Name: sara
+Date: 12/11/2018
+Status: present
+------------------
+
+Name: sara
+Date: 13/11/2018
+Status: present
+------------------
+
+Name: sara
+Date: 14/11/2018
+Status: present
+------------------
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 4
+
+===== ABSENT STUDENTS =====
+123 - sara (11/11/2018)
+135 - maya (11/11/2018)
+135 - maya (13/11/2018)
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 5
+
+Enter Student ID: 123
+
+Attendance Percentage = 75%
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 5
+
+Enter Student ID: 321
+
+Attendance Percentage = 100%
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 5
+
+Enter Student ID: 135
+
+Attendance Percentage = 50%
+Warning: Low Attendance!
+
+==============================
+ ATTENDANCE MANAGEMENT SYSTEM
+==============================
+1. Mark Attendance
+2. Display Attendance
+3. Search Student
+4. Absence Report
+5. Attendance Percentage
+6. Exit
+Enter Choice: 6
+
+Thank You!
+PS C:\Users\Sara>  
 
    
 
