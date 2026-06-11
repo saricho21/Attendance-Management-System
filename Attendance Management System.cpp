@@ -39,13 +39,12 @@ void markAttendance() {
     string name, date, status;
     cout << "\nEnter Student ID: ";
     cin >> id;
-    cin.ignore();
     cout << "Enter Student Name: ";
-    getline(cin, name);
+    cin>> name;
     cout << "Enter Date (DD/MM/YYYY): ";
-    getline(cin, date);
+    cin>> date;
     cout << "Enter Status (Present/Absent): ";
-    getline(cin, status);
+    cin>> status;
     records.push_back(
         Attendance(id, name, date, status)
     );
