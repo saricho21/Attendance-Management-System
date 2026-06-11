@@ -6,19 +6,16 @@ Features:
 - Absence Report
 - Attendance Percentage
 - Exit */
-
 #include <iostream>
 #include <vector>
 #include <fstream>
 using namespace std;
-
 class Attendance {
 public:
     int studentID;
     string studentName;
     string date;
     string status;
-
     Attendance(int id, string name, string d, string s) {
         studentID = id;
         studentName = name;
@@ -35,62 +32,60 @@ void saveToFile() {
              << a.date << ","
              << a.status << endl;
     }
-
     file.close();
 }
 void markAttendance() {
     int id;
     string name, date, status;
-
-    cout << "Enter Student ID: ";
+    cout << "\nEnter Student ID: ";
     cin >> id;
+    cin.ignore();
     cout << "Enter Student Name: ";
-    (cin, name);
+    getline(cin, name);
     cout << "Enter Date (DD/MM/YYYY): ";
-    (cin, date);
+    getline(cin, date);
     cout << "Enter Status (Present/Absent): ";
-    (cin, status);
+    getline(cin, status);
     records.push_back(
         Attendance(id, name, date, status)
     );
     saveToFile();
-    cout << "Attendance Recorded Successfully!\n";
+    cout << "\nAttendance Recorded Successfully!\n";
 }
 void displayAttendance() {
     if (records.empty()) {
-        cout << "No Attendance Records Found!\n";
+        cout << "\nNo Attendance Records Found!\n";
         return;
     }
-
-    cout << "===== ATTENDANCE REPORT =====\n";
+    cout << "\n===== ATTENDANCE REPORT =====\n";
 
     for (Attendance a : records) {
-        cout << "ID: " << a.studentID
-             << "Name: " << a.studentName
-             << "Date: " << a.date
-             << "Status: " << a.status
-             << "---------------------\n";
+        cout << "\nID: " << a.studentID
+             << "\nName: " << a.studentName
+             << "\nDate: " << a.date
+             << "\nStatus: " << a.status
+             << "\n---------------------\n";
     }
 }
 void searchStudent() {
     int id;
-    cout << "Enter Student ID: ";
+    cout << "\nEnter Student ID: ";
     cin >> id;
     bool found = false;
     for (Attendance a : records) {
         if (a.studentID == id) {
             found = true;
-            cout << "Name: " << a.studentName
-                 << "Date: " << a.date
-                 << "Status: " << a.status; 
+            cout << "\nName: " << a.studentName
+                 << "\nDate: " << a.date
+                 << "\nStatus: " << a.status
+                 << "\n------------------\n";
         }
     }
     if (!found)
-        cout << "Student Not Found!\n";
+        cout << "\nStudent Not Found!\n";
 }
 void absenceReport() {
-    cout << "===== ABSENT STUDENTS =====\n";
-
+    cout << "\n===== ABSENT STUDENTS =====\n";
     bool found = false;
     for (Attendance a : records) {
         if (a.status == "Absent" ||
@@ -104,16 +99,14 @@ void absenceReport() {
         }
     }
     if (!found)
-        cout << "No Absent Students Found!\n";
+        cout << "\nNo Absent Students Found!\n";
 }
 void attendancePercentage() {
     int id;
     int present = 0;
     int total = 0;
-
     cout << "\nEnter Student ID: ";
     cin >> id;
-
     for (Attendance a : records) {
         if (a.studentID == id) {
             total++;
@@ -123,37 +116,32 @@ void attendancePercentage() {
         }
     }
     if (total == 0) {
-        cout << "Student Not Found!\n";
+        cout << "\nStudent Not Found!\n";
         return;
     }
     double percentage =
         (double)present / total * 100;
-
-    cout << "Attendance Percentage = "
+    cout << "\nAttendance Percentage = "
          << percentage << "%"
          << endl;
 
     if (percentage < 75)
         cout << "Warning: Low Attendance!\n";
 }
-
 int main() {
     int choice;
-
     do {
-        cout << "==============================";
-        cout << " ATTENDANCE MANAGEMENT SYSTEM";
-        cout << "==============================";
-        cout << "1. Mark Attendance";
-        cout << "2. Display Attendance";
-        cout << "3. Search Student";
-        cout << "4. Absence Report";
-        cout << "5. Attendance Percentage";
-        cout << "6. Exit";
-
-        cout << "Enter Choice: ";
+        cout << "\n==============================";
+        cout << "\n ATTENDANCE MANAGEMENT SYSTEM";
+        cout << "\n==============================";
+        cout << "\n1. Mark Attendance";
+        cout << "\n2. Display Attendance";
+        cout << "\n3. Search Student";
+        cout << "\n4. Absence Report";
+        cout << "\n5. Attendance Percentage";
+        cout << "\n6. Exit";
+        cout << "\nEnter Choice: ";
         cin >> choice;
-
         switch(choice) {
         case 1:
             markAttendance();
@@ -171,149 +159,18 @@ int main() {
             attendancePercentage();
             break;
         case 6:
-            cout << "Thank You!\n";
+            cout << "\nThank You!\n";
             break;
         default:
-            cout << "Invalid Choice!\n";
+            cout << "\nInvalid Choice!\n";
         }
     } while(choice != 6);
     return 0;
-} 
-**//Sample OUTPUT//**
-==============================
- ATTENDANCE MANAGEMENT SYSTEM
-==============================
-1. Mark Attendance
-2. Display Attendance
-3. Search Student
-4. Absence Report
-5. Attendance Percentage
-6. Exit
-Enter Choice: 1
+}
+ 
 
-Enter Student ID: 123
-Enter Student Name: sara
-Enter Date (DD/MM/YYYY): 09/10/2018
-Enter Status (Present/Absent): present
+   
 
-Attendance Recorded Successfully!
-
-==============================
- ATTENDANCE MANAGEMENT SYSTEM
-==============================
-1. Mark Attendance
-2. Display Attendance
-3. Search Student
-4. Absence Report
-5. Attendance Percentage
-6. Exit
-Enter Choice: 1
-
-Enter Student ID: 321
-Enter Student Name: sosi
-Enter Date (DD/MM/YYYY): 09/10/2018
-Enter Status (Present/Absent): absent
-
-Attendance Recorded Successfully!
-
-==============================
- ATTENDANCE MANAGEMENT SYSTEM
-==============================
-1. Mark Attendance
-2. Display Attendance
-3. Search Student
-4. Absence Report
-5. Attendance Percentage
-6. Exit
-Enter Choice: 2
-
-===== ATTENDANCE REPORT =====
-
-ID: 123
-Name: sara
-Date: 09/10/2018
-Status: present
----------------------
-
-ID: 321
-Name: sosi
-Date: 09/10/2018
-Status: absent
----------------------
-
-==============================
- ATTENDANCE MANAGEMENT SYSTEM
-==============================
-1. Mark Attendance
-2. Display Attendance
-3. Search Student
-4. Absence Report
-5. Attendance Percentage
-6. Exit
-Enter Choice: 3
-
-Enter Student ID: 123
-
-Name: sara
-Date: 09/10/2018
-Status: present
-------------------
-
-==============================
- ATTENDANCE MANAGEMENT SYSTEM
-==============================
-1. Mark Attendance
-2. Display Attendance
-3. Search Student
-4. Absence Report
-5. Attendance Percentage
-6. Exit
-Enter Choice: 4
-
-===== ABSENT STUDENTS =====
-321 - sosi (09/10/2018)
-
-==============================
- ATTENDANCE MANAGEMENT SYSTEM
-==============================
-1. Mark Attendance
-2. Display Attendance
-3. Search Student
-4. Absence Report
-5. Attendance Percentage
-6. Exit
-Enter Choice: 5
-
-Enter Student ID: 321
-
-Attendance Percentage = 0%
-Warning: Low Attendance!
-
-==============================
- ATTENDANCE MANAGEMENT SYSTEM
-==============================
-1. Mark Attendance
-2. Display Attendance
-3. Search Student
-4. Absence Report
-5. Attendance Percentage
-6. Exit
-Enter Choice: 5
-
-Enter Student ID: 123
-
-Attendance Percentage = 100%
-
-==============================
- ATTENDANCE MANAGEMENT SYSTEM
-1. Mark Attendance
-2. Display Attendance
-3. Search Student
-4. Absence Report
-5. Attendance Percentage
-6. Exit
-Enter Choice: 6
-
-Thank You!
-PS C:\Users\Sara> 
-               
+  
+    
+ 
