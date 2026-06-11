@@ -91,13 +91,13 @@ The Attendance Management System provides a simple and effective way to manage s
 
 ## Developed By
 
-Group Members:                      ID
+Group Members:                      ID:
 
-1. ---sara tamalew                 0101/25
-2. ---maya mulatu                  0158/25
-3. ---bereket libargew             0025/25
-4. ---elshaday fikadu              0354/25
-5. ---sami zeinu                   0242/25
+1. Sara tamalew   ********              0101/25
+2. Maya mulatu    ********              0158/25
+3. Bereket libargew ********            0025/25
+4. Elshaday fikadu  ********            0354/25
+5. Sami zeinu       ********            0242/25
 
 Course: Fundamentals of Computer Programming
 
